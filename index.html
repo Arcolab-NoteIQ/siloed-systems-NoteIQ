@@ -146,15 +146,22 @@
       min-width:40px;
       height:40px;
       border-radius:8px;
-      background:#1a9f70;
+      background:var(--white);
       color:#ffffff;
       display:flex;
       align-items:center;
       justify-content:center;
       font-weight:700;
-      font-size:1rem;
+      font-size:1rem;            /* Space between icon and border */
+      border: 1px solid #000;        /* Narrow black border */
+      box-sizing: border-box;
+      padding:8px;
     }
-
+.icon:hover {
+  border-color: #000;           /* Change to brand color if needed */
+  transform: scale(1.05);
+  transition: all 0.2s ease;
+}
     .form-wrap{
       background:var(--white);
       border-radius:12px;
@@ -436,7 +443,7 @@
 
             <div class="features-vertical" aria-hidden="false">
               <div class="feature" tabindex="0">
-                <div class="icon">A</div>
+                <div class="icon"><img src="images/icons/SST.svg"></div>
                 <div>
                   <h4>Single Source of Truth</h4>
                   <p>Centralize validation and quality data across systems seamlessly.</p>
@@ -444,7 +451,7 @@
               </div>
 
               <div class="feature" tabindex="0">
-                <div class="icon">B</div>
+                <div class="icon"><img src="images/icons/UnifiedCol.svg"></div>
                 <div>
                   <h4>Unified Collaboration</h4>
                   <p>Connect QA, IT, Engineering in shared workspace real-time.</p>
@@ -452,7 +459,7 @@
               </div>
 
               <div class="feature" tabindex="0">
-                <div class="icon">C</div>
+                <div class="icon"><img src="images/icons/StrVerC.svg"></div>
                 <div>
                   <h4>Strong Version Control</h4>
                   <p>Eliminate document confusion with secure version control management.</p>
@@ -460,7 +467,7 @@
               </div>
 
               <div class="feature" tabindex="0">
-                <div class="icon">D</div>
+                <div class="icon"><img src="images/icons/XTeam.svg"></div>
                 <div>
                   <h4>Cross-team workflow synchronization</h4>
                   <p>Enable seamless handoffs between cross-functional teams without delays.</p>
